@@ -55,3 +55,13 @@ Sentiment BERT/
 ├── requirements.txt
 └── README.md
 ```
+## Modèle utilisé
+
+Le projet utilise un modèle BERT (`bert-base-uncased`) entraîné avec PyTorch pour classifier les sentiments des textes en trois catégories :
+- négatif
+- neutre
+- positif
+
+L'entraînement est réalisé avec un fine-tuning de BERT sur le jeu de données Corona_NLP.
+
+Le modèle BERT entraîné n'est pas inclus dans le dépôt GitHub en raison de sa taille importante. Il est généré automatiquement après l'exécution du script `train.py`.
